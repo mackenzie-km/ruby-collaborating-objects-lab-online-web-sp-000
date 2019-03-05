@@ -19,9 +19,8 @@
     @files = mp3s
   end 
 
-require "pry"
   def import
-@files
+Song.new_by_filename(@files)
     end
   end 
   
