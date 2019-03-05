@@ -19,9 +19,8 @@
     @files = mp3s
   end 
 
-  def import
+def import
 Song.new_by_filename(@files)
-    end
-  end 
+end
   
 end
