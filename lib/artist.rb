@@ -1,5 +1,4 @@
 class Artist 
-  require "pry"
   attr_accessor :name, :songs
 @@all = []
   
@@ -30,7 +29,6 @@ else
    found_artist.save
   end 
   found_artist
-  binding.pry
 end 
 
 def print_songs
