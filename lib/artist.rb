@@ -30,7 +30,7 @@ else
    found_artist.save
   end 
   found_artist
-  binding.pry 
+  #binding.pry 
 end 
 
 def print_songs
