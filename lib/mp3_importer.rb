@@ -16,10 +16,11 @@
       mp3s << file
     end
   end
-    @files = mp3s
+    mp3s
   end 
 
 def import
+  files 
 @files.each do |file|
   Song.new_by_filename(file)
 end 
