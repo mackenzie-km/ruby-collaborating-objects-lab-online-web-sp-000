@@ -28,7 +28,7 @@ if @@all.detect{|artist| artist.name == name
 else 
    found_artist = Artist.new(name)
   end 
-  binding.pry
+  #binding.pry
   found_artist
 end 
 
