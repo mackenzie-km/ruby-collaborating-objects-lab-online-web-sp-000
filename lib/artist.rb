@@ -26,6 +26,7 @@ if @@all.detect{|artist| artist.name == name
      found_artist = artist}
 else 
    found_artist = Artist.new(name)
+   save
   end 
   found_artist
 end 
