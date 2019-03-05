@@ -15,7 +15,7 @@ else
     filename[1].artist = filename[0]
     filename[1]
   end 
-    binding.pry
+    #binding.pry
   end 
   
 end 
