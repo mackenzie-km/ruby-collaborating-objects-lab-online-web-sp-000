@@ -22,14 +22,18 @@ end
 
 def self.find_or_create_by_name(name)
 artist_array = []
+found_artist = ""
+
 @@all.collect do |artist|
  artist_array << artist.name 
  end 
 
  if !artist_array.include?(name)
-  name = Artist.new(name)
+ found_artist = Artist.new(name)
+ else
+   found_artist = 
   end 
-  
+  found_artist
 end 
 
 def print_songs
