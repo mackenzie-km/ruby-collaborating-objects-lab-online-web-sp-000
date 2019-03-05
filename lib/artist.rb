@@ -23,7 +23,7 @@ def self.find_or_create_by_name(name)
 found_artist = ""
 
 if @@all.detect{|artist| artist.name == name 
-     found_artist = artist} != nil 
+     found_artist = artist}
 else 
    found_artist = Artist.new(name)
   end 
