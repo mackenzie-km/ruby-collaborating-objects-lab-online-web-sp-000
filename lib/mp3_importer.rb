@@ -21,10 +21,7 @@
 
 require "pry"
   def import
-    self.files.collect do |file|
-      #binding.pry
-      song = Song.new(file.split(" - ")[1])
-      song.artist = file.split(" - ")[2]
+
     end
   end 
   
