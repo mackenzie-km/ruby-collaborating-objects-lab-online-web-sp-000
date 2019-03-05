@@ -27,7 +27,7 @@ artist_array = []
  end 
 
  if !artist_array.include?(name)
-   Artist.new(name)
+  name = Artist.new(name)
   end 
   
 end 
