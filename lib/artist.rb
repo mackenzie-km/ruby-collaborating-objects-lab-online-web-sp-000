@@ -21,19 +21,12 @@ def self.all
 end 
 
 def self.find_or_create_by_name(name)
-artist_array = []
 found_artist = ""
 
-@@all.collect do |artist|
- artist_array << artist.name 
- end 
-
- if !artist_array.include?(name)
- found_artist = Artist.new(name)
- else
-   found_artist = @@all.detect{|artist| artist.name == name 
-     artist 
-   }
+if @@all.detect{|artist| artist.name == name 
+     found_artist = artist}
+else 
+   found_artist = Artist.new(name)
   end 
   found_artist
 end 
