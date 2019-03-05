@@ -10,7 +10,7 @@ class Song
     found_artist = Artist.find_or_create_by_name(filename[0])
     filename[1] = Song.new(filename[1])
     filename[1].artist = found_artist
-    found_artist.songs << filename[1]
+    found_artist.songs << filename[1].name
     binding.pry
     filename[1]
   end 
