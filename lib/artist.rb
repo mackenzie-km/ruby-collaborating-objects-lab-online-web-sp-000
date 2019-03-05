@@ -28,10 +28,9 @@ found_artist = ""
  artist_array << artist.name 
  end 
 
- if !artist_array.include?(name)
- found_artist = Artist.new(name)
- else
-   found_artist = 
+ if @@all.detect{|artist| artist.name == name 
+     found_artist = artist}
+else 
   end 
   found_artist
 end 
