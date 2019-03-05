@@ -10,6 +10,7 @@ require "pry"
     filename = input.split(" - ")
     filename[1] = self.new(filename[1])
     filename[1].artist = filename[0]
+    filename[1]
     binding.pry
   end 
   
