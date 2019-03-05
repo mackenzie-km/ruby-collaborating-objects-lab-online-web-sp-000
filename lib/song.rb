@@ -5,10 +5,12 @@ class Song
     @name = name 
   end 
   
-  def self.new_by_filename(filename)
-    filename = filename.split(" - ")
-    filename[1] = self.new(filename[1])
-    filename[1].artist = filename[0]
+  def self.new_by_filename(files)
+  files.collect do |file|
+    file.split(" - ")
+    file[1] = self.new(file[1])
+    file[1].artist = file[0]
   end 
+end
   
 end 
