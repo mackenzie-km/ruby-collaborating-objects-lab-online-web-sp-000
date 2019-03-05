@@ -1,6 +1,6 @@
 class Artist 
   attr_accessor :name, :songs
-  
+    require "pry"
 @@all = []
   
 def initialize(name)
@@ -28,6 +28,7 @@ if @@all.detect{|artist| artist.name == name
 else 
    found_artist = Artist.new(name)
   end 
+  binding.pry
   found_artist
 end 
 
