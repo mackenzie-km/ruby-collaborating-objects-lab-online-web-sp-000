@@ -1,5 +1,6 @@
 class Artist 
-  attr_accessor :name, :songs
+  attr_accessor :name, :songsr
+  require "pry"
 @@all = []
   
 def initialize(name)
@@ -29,6 +30,7 @@ else
    found_artist.save
   end 
   found_artist
+  binding.pry
 end 
 
 def print_songs
